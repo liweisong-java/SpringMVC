@@ -4,24 +4,19 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <!--目的：不要把web.xml放在WEB-INF目录下，WEB-INF要放html页面，需要自定义SpringMVC的位置和名称-->
+    <!--注册前端控制器DispatcherServlet-->
     <servlet>
-        <servlet-name>SpringMVC</servlet-name>
+        <servlet-name>DispatcherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <!--初始化参数，配置SpringMVC配置文件的位置和名称-->
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:springMVC.xml</param-value>
         </init-param>
-        <!--Servlet是默认在第一次访问时初始化
-        前端控制器封装了对所有请求的处理，初始化会执行很多内容，
-        如果把所有初始化内容全放在第一次访问时初始化就会影响第一次访问的速度
-        可以放这个标签：
-        将前端控制器DispatcherServlet的初始化时间提前到服务器启动时-->
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>SpringMVC</servlet-name>
+        <servlet-name>DispatcherServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+
 </web-app>

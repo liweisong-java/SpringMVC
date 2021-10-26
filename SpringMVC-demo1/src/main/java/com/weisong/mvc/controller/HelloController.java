@@ -48,4 +48,9 @@ public class HelloController {
         return "index";
 
     }
+
+    @RequestMapping("/target")
+    public String toTarget(){
+        return "target";
+    }
 }

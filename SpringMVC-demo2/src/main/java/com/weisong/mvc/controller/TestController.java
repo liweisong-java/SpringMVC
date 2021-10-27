@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TestController {
 
     @RequestMapping("/")
+    /**
+     * 浏览器请求发送到服务器，被DispatcherServlet处理之后通过RequestMapping找到到控制器方法
+     * 请求映射
+     */
     public String index(){
         return "index";
     }

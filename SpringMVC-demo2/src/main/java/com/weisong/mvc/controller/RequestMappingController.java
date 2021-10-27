@@ -2,6 +2,7 @@ package com.weisong.mvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * @author 李伟松
@@ -19,7 +20,10 @@ public class RequestMappingController {
 //        return "target";
 //    }
 
-    @RequestMapping(value = {"/testRequestMapping","/test"})
+    @RequestMapping(
+            value = {"/testRequestMapping","/test"},
+            method = {RequestMethod.GET}
+            )
     public String success(){
         return "success";
     }

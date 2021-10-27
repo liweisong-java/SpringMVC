@@ -28,5 +28,18 @@ public class RequestMappingController {
         return "success";
     }
 
+    @RequestMapping(
+            /**
+             * value只要满足一个
+            */
+            value = "/testParamsAndHeaders",
+            /**
+             * params中的条件必须同时满足
+            */
+            params = {"username","password=123456"}
+    )
+    public String testParamsAndHeaders(){
+        return "success";
+    }
 
 }

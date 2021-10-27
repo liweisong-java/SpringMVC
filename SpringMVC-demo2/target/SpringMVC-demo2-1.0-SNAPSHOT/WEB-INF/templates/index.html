@@ -17,5 +17,6 @@
     <form th:action="@{/test}" method="post">
         <input type="submit" value="测试RequestMapping注释的method属性">
     </form>
+<a th:href="@{/testParamsAndHeaders(username='admin',password=123456)}">测试RequestMapping注解的params属性--></a>
 </body>
 </html>

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @create 2021-10-27-9:58
  */
 @Controller
-@RequestMapping("/hello")
+//@RequestMapping("/hello")
 public class RequestMappingController {
 
 //    @RequestMapping("/")
@@ -19,7 +19,7 @@ public class RequestMappingController {
 //        return "target";
 //    }
 
-    @RequestMapping("/testRequestMapping")
+    @RequestMapping(value = {"/testRequestMapping","/test"})
     public String success(){
         return "success";
     }

@@ -41,6 +41,7 @@ public class HelloController {
      */
     //请求映射的注解
     @RequestMapping("/")
+
     public String index(){
         //返回视图名称：视图名称就决定了要跳转的页面，因为当前的html时没办法直接访问的，
         // 所以最终跳转到哪个页面时从视图名称决定，
@@ -66,7 +67,8 @@ public class HelloController {
  *          浏览器发送请求到服务器，需要先被前端控制器的url-pattern进行匹配，
  *              如果当前请求能够符合url-pattern（除了jsp匹配不了都能够匹配），
  *          会被当前前端控制器DispatcherServlet进行处理
- *          处理完成后会读取SpringMVC的核心配置文件通过扫描组件找到控制器，
+ *          处理完成后会读取SpringMVC的核心配置文件，
+ *          通过扫描组件找到控制器，
  *          将请求地址和控制器中的@RequestMapping的value属性值进行匹配
  *          （没有注解没有办法找到控制器方法，@RequestMapping叫做请求映射，作用：将请求和控制器方法创建映射关系，
  *          怎么创建:

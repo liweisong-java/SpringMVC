@@ -38,8 +38,17 @@ public class RequestMappingController {
             */
             params = {"username","password=123456"}
     )
+    
     public String testParamsAndHeaders(){
         return "success";
     }
 
+    @RequestMapping("/a?a/testAnt")
+    /**
+     * 浏览器发送的请求里？可以代表任意的单个字符
+     * a?a是指a啥a都能匹配路径
+     */
+    public String testAnt(){
+        return "success";
+    }
 }

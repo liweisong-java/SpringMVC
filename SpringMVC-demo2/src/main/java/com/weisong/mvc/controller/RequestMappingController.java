@@ -17,9 +17,9 @@ public class RequestMappingController {
 //    /**
 //     * 需要保证在所有控制器中RequestMapping所能够匹配到的请求地址是唯一的
 //     */
-//    public String index(){
-//        return "target";
-//    }
+    public String index(){
+        return "target";
+    }
 
     @RequestMapping(
             value = {"/testRequestMapping","/test"},

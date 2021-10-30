@@ -1,5 +1,6 @@
 package com.weisong.mvc.controller;
 
+import com.weisong.mvc.bean.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -43,6 +44,12 @@ public class ParamController {
             String password,
             String[] hobby){
         System.out.println("username:" + username + ",password" + password + ",hobby" + hobby);
+        return "success";
+    }
+
+    @RequestMapping("/testBean")
+    public String testBean(User user){
+        System.out.println(user);
         return "success";
     }
 }

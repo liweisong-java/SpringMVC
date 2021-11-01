@@ -6,6 +6,13 @@
 </head>
 <body>
 <h1>首页</h1>
+
+<!--通过thymeleaf的方式用大括号包裹绝对路径，浏览器解析的绝对路径没有上下文路径，
+为什么用thymeleaf的方式
+    thymeleaf用大括号包括的绝对路径会自动添加上下文路径
+    用/开头的路径为绝对路径，浏览器会把、解析成localhost8080
+-->
 <a TH:href="@{/target}">访问目标页面target.html</a>
+
 </body>
 </html>

@@ -3,6 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
     <!--目的：不要把web.xml放在WEB-INF目录下，WEB-INF要放html页面，需要自定义SpringMVC的位置和名称-->
     <servlet>
         <servlet-name>SpringMVC</servlet-name>

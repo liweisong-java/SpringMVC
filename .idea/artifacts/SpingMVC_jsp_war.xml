@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SpingMVC-jsp:war">
+    <output-path>$PROJECT_DIR$/SpingMVC-jsp/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>SpingMVC-jsp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="SpringMVC-demo3-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="SpingMVC-jsp:war exploded" />
+    </root>
+  </artifact>
+</component>

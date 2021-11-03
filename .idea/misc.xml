@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/SpingMVC-jsp" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC-demo1" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC-demo2" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC-demo3" />
@@ -11,6 +12,7 @@
         <option value="$PROJECT_DIR$/SpringMVC-demo1/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMVC-demo2/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMVC-demo3/pom.xml" />
+        <option value="$PROJECT_DIR$/SpingMVC-jsp/pom.xml" />
       </list>
     </option>
   </component>

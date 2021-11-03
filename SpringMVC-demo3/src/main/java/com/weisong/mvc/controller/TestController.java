@@ -11,13 +11,13 @@ import javax.swing.*;
  */
 @Controller
 public class TestController {
-    @RequestMapping("/")
-    public String index(){
-        return "index";
-    }
+//    @RequestMapping("/")
+//    public String index(){
+//        return "index";
+//    }
 
-    @RequestMapping("/test_view")
-    public String testView(){
-        return "test_view";
-    }
+//    @RequestMapping("/test_view")
+//    public String testView(){
+//        return "test_view";
+//    }
 }

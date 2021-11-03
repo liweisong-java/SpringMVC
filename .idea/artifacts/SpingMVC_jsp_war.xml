@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="SpringMVC-demo3-1.0-SNAPSHOT.war">
+    <root id="archive" name="SpringMVC-jsp-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="SpingMVC-jsp:war exploded" />
     </root>
   </artifact>
